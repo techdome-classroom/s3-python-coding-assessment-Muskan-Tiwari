@@ -7,9 +7,8 @@ class Solution(object):
              stack.append(char)
          elif char in bracket.keys():
              if not stack or stack.pop()!= bracket[char]:
-                 print(False)
-                 return 
-     print(len(stack)==0)
+                 return False
+     return(len(stack)==0)
 
 
 
