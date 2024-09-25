@@ -6,8 +6,9 @@ def isValid(s):
             stack.append(char)
         elif char in bracket.keys():
             if not stack or stack.pop()!= bracket[char]:
-                return false
-    return len(stack)==0
+                print(False)
+                return 
+    print(len(stack)==0)
 
 
 
